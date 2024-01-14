@@ -144,6 +144,10 @@ public class Movement : MonoBehaviour
         ///
         if(IsBashing)
         {
+            PlayerRb.velocity = BashDir * BashPower;
+            IsBashing = false;
+
+            /*
             if(BashTime > 0 )
             {
                 BashTime -= Time.deltaTime;
@@ -157,6 +161,7 @@ public class Movement : MonoBehaviour
 
 
             }
+            */
         }
     }
 
